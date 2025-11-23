@@ -8,6 +8,8 @@ const app = express();
 const port = 4000;
 app.use(morgan("dev"));
 
+app.set("view engine", "pug");
+app.set("views", process.cwd() + "/src/views");
 app.use("/video", videoRouter);
 app.use("/users", userRouter);
 app.use("/", globalRouter);

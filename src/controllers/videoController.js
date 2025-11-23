@@ -1,13 +1,13 @@
 export const trending = (req, res) => {
-  res.send("홈페이지 비디오");
+  res.render("home");
 };
 
 export const see = (req, res) => {
-  res.send("watch 비디오");
+  res.render("watch");
 };
 
 export const edit = (req, res) => {
-  res.send("edit 비디오");
+  res.render("edit");
 };
 
 export const search = (req, res) => {
