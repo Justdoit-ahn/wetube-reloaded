@@ -1,4 +1,7 @@
 extends base.pug
 
-block content 
-  h1 edit 페이지 입니다.
+block content
+  h4 체인지 타이틀 오브 비디오
+  form(method="POST")
+    input(name="title", placeholder="비디오 타이틀", value=video.title, required)
+    input(value="Save", type="submit")

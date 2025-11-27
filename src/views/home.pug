@@ -1,6 +1,9 @@
 extends base.pug
+include mixins/video.pug
 
 block content 
-  h1 Home 페이지입니다.
-  input(placeholder="이게 뭘까요?? 0ㅅ0")
-  button 클릭??
+  h2 Welcome here you will see the trending video
+    each video in videos
+      +video(video)
+    else
+      li 배열에 아무것도 없습니다.
