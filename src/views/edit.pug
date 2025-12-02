@@ -1,7 +1,9 @@
 extends base.pug
 
 block content
-  h4 체인지 타이틀 오브 비디오
+  h4 업데이트 비디오
   form(method="POST")
     input(name="title", placeholder="비디오 타이틀", value=video.title, required)
+    input(name="description",placeholder="Description", required, value=video.description, text="text", minlength=20)
+    input(name="hashtags",placeholder="Hashtags, separated by comma.", required, value=video.hashtags.join(), text="text")
     input(value="Save", type="submit")

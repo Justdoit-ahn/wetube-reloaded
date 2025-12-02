@@ -5,7 +5,7 @@ import userRouter from "./routers/userRouter";
 import videoRouter from "./routers/videoRouter";
 
 const app = express();
-const port = 4000;
+
 app.use(morgan("dev"));
 
 app.set("view engine", "pug");
@@ -15,7 +15,4 @@ app.use("/videos", videoRouter);
 app.use("/users", userRouter);
 app.use("/", globalRouter);
 
-const portClick = () =>
-  console.log(`Server listenting on port http://localhost:${port}`);
-
-app.listen(port, portClick);
+export default app;
