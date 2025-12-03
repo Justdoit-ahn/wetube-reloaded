@@ -5,6 +5,6 @@ import app from "./server";
 const port = 4000;
 
 const portClick = () =>
-  console.log(`Server listenting on port http://localhost:${port}`);
+  console.log(`현재 동작하고 있는 포트 : http://localhost:${port}`);
 
 app.listen(port, portClick);
