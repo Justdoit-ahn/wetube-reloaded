@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/Justdoit-ahn/wetube-reloaded#readme",
   "dependencies": {
+    "bcrypt": "^6.0.0",
     "express": "^5.1.0",
+    "express-session": "^1.18.2",
     "mongoose": "^9.0.0",
     "morgan": "^1.10.1",
     "path-to-regexp": "^8.3.0",
