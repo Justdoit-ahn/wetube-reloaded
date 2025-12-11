@@ -1,32 +1,13 @@
 doctype html
 html(lang="ko")
-  head
-    title #{pageTitle} | 페이지입니다.
-    link(rel="stylesheet" href="https://unpkg.com/mvp.css")
-  body
-    header
-      h1=pageTitle
-      nav
-        ul
-          li 
-            a(href="/") Home
-          if loggedIn
-            li
-              a(href="/logout") 로그아웃
-            li
-              a(href="/my-profile") #{loggedInUser.name}의 프로파일
-          else
-            li
-              a(href="/join") 회원가입
-            li
-              a(href="/login") 로그인
-          li
-            a(href="/search") Search
-          li 
-            a(href="/videos/upload") 업로드 비디오
-
-
-
-    main
-      block content
-  include partials/footer.pug
+    head
+        title #{pageTitle} | #{siteName}
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css")
+        link(rel="stylesheet", href="/static/css/styles.css")
+    body
+        include partials/header                
+        main
+            block content
+        include partials/footer
+    block scripts
+    
