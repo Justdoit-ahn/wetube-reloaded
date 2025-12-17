@@ -28,7 +28,8 @@
     "multer": "^2.0.2",
     "node-fetch": "^3.3.2",
     "path-to-regexp": "^8.3.0",
-    "pug": "^3.0.3"
+    "pug": "^3.0.3",
+    "regenerator-runtime": "^0.14.1"
   },
   "devDependencies": {
     "@babel/core": "^7.28.5",
