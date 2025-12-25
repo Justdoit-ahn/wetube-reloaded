@@ -4,7 +4,8 @@ mongoose.connect(process.env.DB_URL);
 
 const db = mongoose.connection;
 
-const handleOpen = () => console.log("DB에 접속하였습니다.");
+const handleOpen = () => console.log("✅ Connected to DB");
+const handleError = (error) => console.log("❌ DB Error", error);
 
-db.on("error", (error) => console.log("DB 오류", error));
+db.on("error", handleError);
 db.once("open", handleOpen);
